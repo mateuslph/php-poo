@@ -1,6 +1,7 @@
 <?php
 
-require_once 'src/Conta.php';
+require_once 'src/Conta.php';  /* nessas proximas tres linhas de codigo (require_once) esta sendo implementado um arquivo de codigo externo, que
+deve ser em ordem correta */
 require_once 'src/Titular.php';
 require_once 'src/CPF.php';
 
