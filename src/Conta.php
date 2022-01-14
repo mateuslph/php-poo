@@ -28,8 +28,8 @@ class Conta
     public function saca(float $valorASacar): void  /* "void" significa nao retornar nada, eh importante exclarecer esses casos tambem. 
     Para fazer o saque ao inves do metodo exigir como parametro a conta criada e o valor a sacar, o "this" facilita, necessitando apenas 
     o objeto (que eh a conta criada) acessar o metodo (saca) passando como parametro somente o valor a sacar ($valorASacar) */
-    {
-        if ($valorASacar > $this->saldo) {
+    {  // qualquer metodo e funcoes devem abrir as chaves na linha de baixo, e nela nao codificar nada
+        if ($valorASacar > $this->saldo) {  // qualquer estrutura de controle de fluxo deve abrir as chaves na mesma linha do seu inicio
             echo "Saldo indisponível";
             return;
         }
